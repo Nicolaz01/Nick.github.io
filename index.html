@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+
+<html lang="pt-br"
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="styles/style.css"/>
+  <meta name="description" content="Um site de exemplo">
+  <meta name="keywords" content="Agencia Digital">
+    
+    <style>
+  
+ /* @media only screen and (max-width: 1000px);
+  .navbar{
+    position: relative;
+  }
+  
+  .menu{
+    display: none;
+  }
+  
+  .logo{
+    margin:0;
+    text-align: center;
+    
+  }
+  .header{
+    padding-top:50px;
+  }
+  .headline{
+    flex:100%;
+    margin:5%;
+    text-align: center;
+  }
+  
+  .headline p{
+    text-align: center;
+  }
+  
+  .img-headline{
+    flex:100%;
+    margin:5%;
+    text-align:center;
+  }
+  
+  .card{
+    width:100%;
+  }
+  
+  */
+  @import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;1,100&display=swap');
+  
+    *{
+      
+      box-sizing: border box;
+    }
+    
+    body{
+      
+     margin:0;
+      font-family: 'Public Sans', sans-serif; 
+    
+     
+  
+      
+    }
+    
+    .navbar{
+      display: flex;
+      flex-flow: row wrap;
+      height: 100px;
+      background:white;
+      justify-content:center;
+      align-items:center;
+    }
+    
+    .logo{
+      flex:20%;
+      margin-left:10%
+      text-align:left;
+      
+          
+    }
+    
+    .logo h1{
+     margin-right:10%;
+     font-family: 'Dancing Script', cursive;
+     color: #180F4A;
+     font-size:50px;
+     text-align: center;
+      
+  
+  
+  }
+    .menu{  
+     
+      flex:60%;  
+      text-align:center 30%;
+      text-align:right;
+      padding:0px;
+      font-size:10px;
+     
+    }
+   
+  .menu a{
+    color: #180F4A;
+    text-align:center;
+    text-decoration: none;
+    font-size:20px;
+    padding:20px 9px;
+    
+  }
+  
+  .menu a:hover{
+    color:#FF2978;
+    border-top:4px solid #180F4A;
+  }
+  
+  #botao{
+    display:inline-block;
+    background: #180F4A;
+    color:white;
+    padding: 10px 20px;
+    border-radius:5px;
+    margin-right:0%;
+    margin-left:100%px;
+  }
+  
+  #botao:hover{
+    border:none;
+    background:#FF2978;
+  }
+  
+  .header{
+    margin-top:10%;
+    margin-left:20%;
+    display:flex;
+    flex-flow:row wrap; 
+    justify-content: center;
+    align-items: center;
+    background: white;
+  }
+   
+  .headline{
+    width:100%;
+    margin-left:5%;
+    margin-right:15%;
+    flex:40%;
+    /*border:1px solid black;*/
+    
+  } 
+  
+  .headline h2{
+    width:100%;
+    font-weight: 900;
+    font-size:20px;
+    color: #180F4A;
+    padding:0;
+    margin-top:70px;
+  }
+  
+  .headline p{
+    color: gray;
+    text-align:left;
+    text-align:center;
+  }
+  
+  .contact-btn{
+    display: inline-block;
+    background: #FF2978;
+    padding:10px;
+    color:white;
+    text-transform: uppercase;
+    border-radius:5px;
+    text-decoration:none;
+  }
+  
+  .contact-btn:hover{
+    background:#180F4A;
+  }
+  
+  .img-headline{
+  /*  margin-right:60%;*/
+    flex:40%;
+    text-align:center;
+    margin-top:120px;
+    margin-bottow:10px;
+    margin-left:10%;
+    margin-right:10%;
+   /* border:1px solid red;*/
+    
+  }
+  
+  section{
+    background: lightgray;
+    display: inline-block;
+    margin-top:80px;
+    border:1px solid black;
+    margin-left:5%;
+    margin-right:5%;
+    padding: 5%;
+    text-align: center;
+    width: 85%;
+  }
+  
+  section h2{
+    width:100%;
+    font-size:50px;
+    margin:0;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    color: #180F4A;  
+    
+  }
+  
+  .servicos{
+    display: inline-block;
+    margin-top: 5%;
+  }
+  
+  .card{
+    font-family: 'Dancing Script', cursive;
+    display: inline-block;
+    width: 40%;
+    padding:20px;
+    margin:1%;
+    border:5px solid #FF2978;
+    border-radius:9px;
+  }
+  
+  .card:hover{
+    background: #180F4A;
+    color:white;
+    font-size:20px;
+  }
+  
+  
+  
+  
+  footer{
+    width:110%;
+    margin-top:100px;
+    margin-right:300px;
+    height: 400px;
+    background-image:linear-gradient(180deg, #180F4A,#090422,black);
+    text-align: center;
+    border-top:3px solid #FF2978;
+  }
+  
+  .logo-rodape{
+    padding: 60px;
+    text-align:center;
+  }
+  
+  
+  .Agencia{
+     font-family: 'Dancing Script', cursive;
+     color: white;
+     font-size:50px;
+     text-align: center;
+  }
+  
+  
+    </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">
+      <h1>Agência fake</h1>
+    </div>
+    <div class="menu">
+      <a href="#">Home</a>
+      <a href="#">Serviços</a>
+      <a id="botao" href="file:///storage/emulated/0/01/Formul%C3%A1rio%20.html">Fale conosco</a>
+    </div>
+  </nav>
+  <header class="header">
+    <div class="headline">
+      <h2 style="letter-spacing: 15px;" width="100%">Você achou a melhor</h2>
+      <h2 style="font-size:70px" width="100%">Agência Digital</h2>
+      <p>A associação anjo de 4 patas,foi introduzida em felixlândia MG,por volta de 2019,por um grupo de amigos,com o intuito de abrigar e proteger animais em situações precárias,como abandono,maus- tratos,em situações de risco etc...
+
+Temos como principal objetivo, o acolhimento desses animais,visando introduzi-los em uma nova família,para q possam ter uma vida novamente!
+Além de conscientizar q sociedade
+
+Trabalhamos de forma voluntária,e sem fina lucrativos, estamos abertos a doações,para que possamos continuar com nosso trabalho,e darmos uma nova chance para nossos amiguinhos!</p>
+      <a href="#" class="contact-btn">Contrate agora</a>
+    </div>
+    <div class="img-headline">
+       <img style="max-width:100%;" src="file:///storage/B665-191B/Download/12083622_Wavy_Bus-27_Single-07.jpg">
+    </div>
+  </header>
+  <section>
+    <h2>O que podenos fazer pelo seu negocio?</h2>
+    <div class="servicos">
+      <div class="card" max-width="100%">
+        <h3>Desenvolvimento de Sites</h3>
+        <p>COMO AJUDAR A muitas formas de nos ajudar a cuidar de  animais que cuidamos,por mínimo que seja o valor,seja ela em
+Nos ajudar a sustentar aluguel</p>
+      </div>
+      <div class="card"><h3>Desenvolvimento de Apps</h3>
+      <p>COMO AJUDARA muitas formas de nos ajudar a cuidar de  animais que cuidamos,por mínimo que seja o valor,seja ela em 
+Nos ajudar a sustentar aluguel</p></div>
+      
+    </div>
+  </section>
+  <footer max-width:100%;>
+    <div class="logo-rodape">
+    <h1 class="Agencia">Agência Fake</h1>
+     <p style="color:white;">Um site feito em html e CSS puro</p></div>
+    <b style="color: white;">© Todos os direitos por Nicolas</b>
+  </footer>
+</body>
+</html>
